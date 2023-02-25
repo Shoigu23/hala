@@ -1,9 +1,9 @@
-let navbar = document.querySelector('.nav__links'); 
- 
-document.querySelector('#menu-btn').onclick = () =>{ 
-    navbar.classList.toggle('active'); 
-} 
- 
-window.onscroll = () =>{ 
-    navbar.classList.remove('active'); 
+const openNav = () => {
+    document.getElementById("mySidebar").style.width = "250px";
+    document.getElementById("main").style.marginLeft = "250px";
+}
+
+const closeNav = () => {
+    document.getElementById("mySidebar").style.width = "0";
+    document.getElementById("main").style.marginLeft = "0";
 }
